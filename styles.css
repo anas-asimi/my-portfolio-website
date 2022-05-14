@@ -123,6 +123,7 @@ header {
 }
 .home .container .text{
   width: calc(100% - 400px);
+  max-width: 584px;
   margin-left: 10px;
 }
 .home .container .text .hi{
