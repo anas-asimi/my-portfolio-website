@@ -156,7 +156,35 @@ header {
   width: 70%;
   line-height: 25px;
 }
-
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+}
+.contact h1{
+  font-size: x-large;
+  padding: 20px;
+}
+.contact .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: pre;
+}
+.contact div p {
+  white-space: pre;
+}
+.contact .keys{
+  font-weight: bolder;
+  margin-right: 10px;
+}
+.contact .values{
+  margin-left: 20px;
+}
+.contact .values a:hover{
+  color: var(--second-color);
+}
 /*  */
 /*  */
 /*  */
@@ -185,6 +213,9 @@ header {
     align-items: center;
   }
   .logo {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-align: center;
   }
   .nav-items {
   }
@@ -295,7 +326,7 @@ header {
     margin-bottom: 10px;
   }
   .home .container .text{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
