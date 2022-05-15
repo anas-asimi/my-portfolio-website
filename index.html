@@ -1,65 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Anas Asimi portfolio</title>
-    <script
-      src="https://kit.fontawesome.com/45e02735af.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <h1 class="logo">Anas Asimi</h1>
-      <div class="nav-items" id="nav-items">
-        <a href="#" class="menu-open" id="close-link">
-          <i class="fa-solid fa-arrow-up fa-2xl"></i>
-        </a>
-        <a href="#home" class="nav-item active-link">Home</a>
-        <a href="#about" class="nav-item">About</a>
-        <a href="#galerie" class="nav-item">Galerie</a>
-        <a href="#contact" class="nav-item">Contact</a>
-      </div>
-      <p class="hehe">hehe</p>
-      <a href="#" class="menu-close" id="open-link"
-        ><i class="fa-solid fa-bars fa-2xl"></i
-      ></a>
-    </header>
-    <div class="content" id="content">
-      <section id="home" class="home">
-        <div class="container">
-          <div class="big-circle">
-            <img src="./mypic.jpg" alt="me hehe" />
-          </div>
-          <div class="text">
-            <div class="hi">Hi<div class="emoji">&#128075</div></div>
-            <p class="i-am">I am UX and web developer</p>
-            <p class="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, sapiente! Quia fuga ipsum deserunt nam nisi beatae illo qui cumque?</p>
-          </div>
-        </div>
-      </section>
-      <section id="about" class="about">about</section>
-      <section id="galerie" class="galerie">galerie</section>
-      <section id="contact" class="contact">
-        <h1>contact with me in :</h1>
-        <div class="container">
-          <div class="keys">
-            <p>Email  :</p>
-            <p>Phone  :</p>
-            <p>Phone  :</p>
-            <p>LinkedIn :</p>
-          </div>
-          <div class="values">
-            <p><a href="mailto: asimianas@outlook.com" target="_blank">asimianas@outlook.com</a></p>
-            <p><a href="tel:+212697748319">+2126 97 74 83 19</a></p>
-            <p><a href="tel:+212771527608">+2127 71 52 76 08</a></p>
-            <p><a href="https://www.linkedin.com/in/anas-asimi-8241b3200/" target="_blank">Anas Asimi</a></p>
-          </div>
-        </div>
-      </section>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Anas Asimi portfolio</title>
+  <script src="https://kit.fontawesome.com/45e02735af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">Anas Asimi</h1>
+    <div class="nav-items" id="nav-items">
+      <a href="javascript:close_menu();" class="menu-close" id="close-link">
+        <i class="fa-solid fa-arrow-up fa-2xl"></i>
+      </a>
+      <a href="#home" class="nav-item active-link">Home</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#galerie" class="nav-item">Galerie</a>
+      <a href="#contact" class="nav-item">Contact</a>
     </div>
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+    <p class="hehe">hehe</p>
+    <a href="javascript:open_menu();" class="menu-open" id="open-link"><i class="fa-solid fa-bars fa-2xl"></i></a>
+  </header>
+  <div class="content" id="content">
+    <section id="home" class="home">
+      <div class="container">
+        <div class="big-circle">
+          <img src="./images/mypic.jpg" alt="me hehe" />
+        </div>
+        <div class="text">
+          <div class="hi">Hi<div class="emoji">&#128075</div>
+          </div>
+          <p class="i-am">I am UX and web developer</p>
+          <p class="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, sapiente! Quia fuga ipsum
+            deserunt nam nisi beatae illo qui cumque?</p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <h1>About me :</h1>
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur sint ipsum sapiente illum corrupti nobis?
+        Facilis quaerat aliquid at tempore labore blanditiis laborum minima aliquam consequuntur molestias culpa,
+        veritatis laudantium.
+      </div>
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur sint ipsum sapiente illum corrupti nobis?
+        Facilis quaerat aliquid at tempore labore blanditiis laborum minima aliquam consequuntur molestias culpa,
+        veritatis laudantium.
+      </div>
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur sint ipsum sapiente illum corrupti nobis?
+        Facilis quaerat aliquid at tempore labore blanditiis laborum minima aliquam consequuntur molestias culpa,
+        veritatis laudantium.
+      </div>
+    </section>
+    <h1>Galerie :</h1>
+    <section id="galerie" class="galerie">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img
+            src="./images/plan 01.jpg"
+            class="slide-images">
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img
+            src="./images/plan 02.jpg"
+            class="slide-images">
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img
+          src="./images/plan 03.jpg"
+          class="slide-images">
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img
+            src="./images/plan 04.jpg"
+            class="slide-images">
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img
+            src="./images/plan 05.jpg"
+            class="slide-images">
+          <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img
+            src="./images/plan 06.jpg"
+            class="slide-images">
+          <div class="text"></div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h1>contact with me in :</h1>
+      <div class="container">
+        <div class="keys">
+          <p>Email :</p>
+          <p>Phone :</p>
+          <p>Phone :</p>
+        </div>
+        <div class="values">
+          <p><a href="mailto: asimianas@outlook.com" target="_blank">asimianas@outlook.com</a></p>
+          <p><a href="tel:+212697748319">+2126 97 74 83 19</a></p>
+          <p><a href="tel:+212771527608">+2127 71 52 76 08</a></p>
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/anas-asimi-8241b3200/" target="_blank"><i
+            class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <a href="https://facebook.com/AnasAssimi10" target="_blank"><i
+            class="fa-brands fa-facebook-square fa-2xl"></i></a>
+        <a href="https://www.instagram.com/asimi_anas/" target="_blank"><i
+            class="fa-brands fa-instagram-square fa-2xl"></i></a>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+</body>
 </html>
